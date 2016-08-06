@@ -1,7 +1,9 @@
 package com.airballdigital.duckduckgo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -47,8 +49,12 @@ public class ResultActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String txt = "" + adapter.getItem(i).getText().toString();
-                Toast.makeText(getApplicationContext(), txt + "" , Toast.LENGTH_LONG).show();
+
+                try{
+                    String txt = "" + adapter.getItem(i).getText().toString();
+                    Toast.makeText(getApplicationContext(), txt + "", Toast.LENGTH_LONG).show();
+                }
+                catch(Exception ex){ }
             }
         });
     }
@@ -75,6 +81,11 @@ public class ResultActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, MainActivity.class));
     }
 
 }

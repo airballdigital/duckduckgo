@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         btnFindResults.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 String searchTerm = etSearch.getText().toString();
 
                 if (!TextUtils.isEmpty(searchTerm)) {
