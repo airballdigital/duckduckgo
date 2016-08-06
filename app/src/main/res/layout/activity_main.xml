@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.airballdigital.duckduckgo.MainActivity">
+
+
+    <Button android:id="@+id/btnFindResults"
+        android:text="@string/find_results"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="60dp"
+        android:layout_below="@+id/etSearch"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:background="@color/colorBlack"
+        android:hint="Type to search"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

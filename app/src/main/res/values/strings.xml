@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Duck Duck Go</string>
+
+    <string name="api_endpoint">http://api.duckduckgo.com</string>
+
+    <!--MAIN ACTIVITY SEARCH SCREEN -->
+    <string name="find_results">Find Results</string>
+
+</resources>
